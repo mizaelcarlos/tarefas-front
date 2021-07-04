@@ -2,10 +2,16 @@ import { http } from './config'
 
 export default {
     
-    listar:() =>{
-        return http.get('tarefas')
+    listarTarefasFazer:() =>{
+        return http.get('tarefas/a_fazer')
     },
-    salvar:(tarefa) => {
+    listarTarefasFeitas:() =>{
+        return http.get('tarefas/feitas')
+    },
+    obterTipo:(tipo_id) =>{
+        return http.get('tipo/visualizar/' + tipo_id)
+    },
+    guardar:(tarefa) => {
      
         return http.post('tarefas/novo',tarefa)
     },

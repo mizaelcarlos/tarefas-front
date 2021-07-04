@@ -10,12 +10,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+    
+    nav {
+    color: #fff;
+    background-color: #1E88E5;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}
+    
+
+    
+    
+
+  </style>
   </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    <nav id="menu">
+      <ul>
+          <li><a href="#/tarefas_fazer">Tarefas a Fazer</a></li>
+          <li><a href="#/tarefas_feitas">Tarefas feitas</a></li>
+          <li><a href="#/tipos">Tipos</a></li>
+      </ul>
+    </nav>
+    <div id="app">
+      
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>
