@@ -1,24 +1,15 @@
-# tarefas-front
+<h1>Front-end que consome a API de controle de tarefas</h1>
 
-## Project setup
-```
-npm install
-```
+<p>A aplicação possui três telas</p>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+<p>Cada tela existe uma opção no MENU, são elas: tarefas a fazer, tarefas feitas e tipos</p>
 
-### Compiles and minifies for production
-```
-npm run build
-```
+<p>Tarefas a fazer e Tarefas feitas abre o formulário para criação bem como uma tabela que já mostra essas tarefas</p>
 
-### Lints and fixes files
-```
-npm run lint
-```
+<p>Em cada uma das telas acima , eu consigo editar uma tarefa criada e na tela de tarefas a fazer , tenho uma opção onde marco a tarefa como concluída.</p>
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<p>A demais opções é de editar e excluir</p>
+
+<p>Existe uma tela chamada tipos que possui o formulário para criaçaõ, alteraçaõ e remoção de um tipo</p>
+
+
