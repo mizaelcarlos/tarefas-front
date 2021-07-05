@@ -18,7 +18,7 @@
           <label>Descrição</label>
           <input type="text" placeholder="Descrição" v-model="tarefa.descricao">
           <label>Feita</label>
-          <input type="text" placeholder="Tarefa concluída?" v-model="tarefa.feita">
+          <input type="text" placeholder="Concluída" v-model="tarefa.feita">
           <label>Tipo</label>
           <input type="number" placeholder="Tipo" v-model="tarefa.tipo_id">
 
@@ -33,7 +33,7 @@
           <tr>
             <th>Titulo</th>
             <th>Descrição</th>
-            <th>Concluída?</th>
+            <th>Concluída</th>
             <th>Tipo</th>
             <th>OPÇÕES</th>
           </tr>
@@ -52,6 +52,7 @@
             <td>
               <button @click="editar(tarefa)" class="waves-effect btn-small blue darken-1"><i class="material-icons">create</i></button>
               <button @click="remover(tarefa)" class="waves-effect btn-small red darken-1"><i class="material-icons">delete_sweep</i></button>
+              <button @click="concluir(tarefa)" class="waves-effect btn-small green darken-1"><i class="material-icons">check_circle_outline</i></button>
             </td>
 
           </tr>
@@ -134,6 +135,15 @@ export default {
 
       if(confirm('Deseja remover essa tarefa?')){
         Tarefa.apagar(tarefa).then(resposta => {
+        this.listar()
+      })
+      }
+      
+    },
+     concluir(tarefa){
+
+      if(confirm('Deseja remover essa tarefa?')){
+        Tarefa.concluir(tarefa).then(resposta => {
         this.listar()
       })
       }

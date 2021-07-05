@@ -2,8 +2,7 @@
   <div id="app">
 
     <div class="container">
-      
-       <h3>Tarefas feitas</h3>
+      <h3>Tarefas feitas</h3>
 
       <form @submit.prevent="salvar">
 
@@ -12,8 +11,8 @@
           <label>Descrição</label>
           <input type="text" placeholder="Descrição" v-model="tarefa.descricao">
           <label>Feita</label>
-          <input type="text" placeholder="Tarefa concluída?" v-model="tarefa.feita">
-          <label>Tipo</label>
+          <input type="text" placeholder="Sim ou Não" v-model="tarefa.feita">
+          <label>Tipo</label> 
           <input type="number" placeholder="Tipo" v-model="tarefa.tipo_id">
 
           <button class="waves-effect waves-light btn-small">Salvar<i class="material-icons left">save</i></button>
@@ -27,7 +26,7 @@
           <tr>
             <th>Titulo</th>
             <th>Descrição</th>
-            <th>Concluída?</th>
+            <th>Concluída</th>
             <th>Tipo</th>
             <th>OPÇÕES</th>
           </tr>

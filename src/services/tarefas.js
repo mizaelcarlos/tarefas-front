@@ -22,5 +22,9 @@ export default {
     apagar:(tarefa) => {
      
         return http.delete('tarefas/' + tarefa.id)
+    },
+    concluir:(tarefa) => {
+     
+        return http.put('tarefas/concluir/' + tarefa.id)
     }
 }
