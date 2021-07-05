@@ -2,7 +2,7 @@
   <div id="app">
 
     <div class="container">
-      <h3>Tarefas feitas</h3>
+      <h3>Tarefas concluídas</h3>
 
       <form @submit.prevent="salvar">
 

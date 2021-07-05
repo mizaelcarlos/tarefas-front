@@ -142,7 +142,7 @@ export default {
     },
      concluir(tarefa){
 
-      if(confirm('Deseja remover essa tarefa?')){
+      if(confirm('Deseja concluir essa tarefa?')){
         Tarefa.concluir(tarefa).then(resposta => {
         this.listar()
       })
